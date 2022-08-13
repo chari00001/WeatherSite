@@ -1,12 +1,12 @@
 ## To install all dependencies:
 
-´´´
+´´´bash
 npm install
 ´´´
 
 ## To start server: 
 
-´´´
+´´´bash
 npm run start
 ´´´
 
