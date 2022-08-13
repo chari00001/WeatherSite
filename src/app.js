@@ -57,7 +57,7 @@ app.get('/weather', (req, res) => {
                 error,
             })
         } 
-        forecast(latitude, longitude, (error, {status, temperature, feelslike, precip} = {}) => {
+        forecast(latitude, longitude, (error, {status, temperature, feelslike, precip, wind_speed, humidity, cloudcover} = {}) => {
             if(error){
                 return res.send({
                     error,
@@ -65,7 +65,7 @@ app.get('/weather', (req, res) => {
             }
             res.send({
                 location,
-                forecast: status + ". It is currently " + temperature + " degrees out. There is a " + precip + "% chance of rain."
+                forecast: status + ". It is currently " + temperature + " degrees out. There is a " + precip + "% chance of rain, " + wind_speed + " km/h of wind speed, " + humidity + "% of humidity and " + cloudcover + "% cloudcover. "
             })
         })
     })
