@@ -3,8 +3,6 @@ const search = document.querySelector('input')
 const message1 = document.getElementById('message-1')
 const message2 = document.getElementById('message-2')
 
-// message1.textContent = ''
-
 weatherForm.addEventListener('submit', (e) => {
     e.preventDefault()
 
