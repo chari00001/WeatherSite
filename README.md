@@ -12,4 +12,4 @@ npm run start
 
 ## To start app:
 
->Type localhost:8080 to browser
+Type localhost:8080 to browser
